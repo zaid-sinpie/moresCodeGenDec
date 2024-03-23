@@ -55,3 +55,5 @@ const morseCode = {
     '@': '·−−·−·',
     ' ': ' ',
   };
+
+  export default morseCode;
