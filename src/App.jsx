@@ -22,8 +22,8 @@ function App() {
     <>
     <h1 className="text-center font-bold text-4xl uppercase mt-4 text-stone-100">Code Decode Morse</h1>
       <Section>
-        <Content generateValue={currGenerateText} onSelect={handleGenerate} ref={generateMorse} title={'Generate Morse Code'} btnTitle={'Generate'}/>
-        <Content generateValue={currDecodeText} onSelect={handleDecode} ref={decodeMorse} title={'Decode Morse Code'} btnTitle={'Decode'}/>
+        <Content id={'encode'} generateValue={currGenerateText} onSelect={handleGenerate} ref={generateMorse} title={'Generate Morse Code'} btnTitle={'Generate'}/>
+        <Content id={'decode'} generateValue={currDecodeText} onSelect={handleDecode} ref={decodeMorse} title={'Decode Morse Code'} btnTitle={'Decode'}/>
       </Section>
     </>
   );
