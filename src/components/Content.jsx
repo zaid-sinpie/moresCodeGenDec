@@ -1,5 +1,6 @@
 import { forwardRef, useState, useEffect } from "react";
 import morseCode from "../data.js";
+import {toast } from 'react-toastify';
 
 const Content = forwardRef(function Content(
   { title, btnTitle, onSelect, generateValue, id },
@@ -47,8 +48,10 @@ const Content = forwardRef(function Content(
   function copyTextToClipboard() {
     if(id === 'encode'){
       textToCopy = currContentValue;
+      toast.success('text coppied successfully');
     }else{
       textToCopy = currDecodeValue;
+      toast.success('text coppied successfully');
     }
 
     navigator.clipboard
